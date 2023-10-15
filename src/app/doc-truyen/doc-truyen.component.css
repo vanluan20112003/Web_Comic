@@ -1,0 +1,102 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.chapter-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.chapter-selection select,
+.chapter-selection input[type="number"] {
+    width: 1000px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chapter-selection select {
+    width: 120px;
+}
+
+.chapter-selection input[type="number"] {
+    width: 60px;
+}
+
+.chapter-selection button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navigation-buttons button:hover {
+    background-color: #555;
+}
+
+/* Thiết lập kích thước và kiểu dáng cho ô đọc truyện */
+.story-container {
+    width: 80%;
+    /* Độ rộng của ô đọc truyện */
+    height: 600px;
+    /* Chiều cao của ô đọc truyện */
+    border: 1px solid #ccc;
+    /* Viền */
+    padding: 10px;
+    /* Khoảng cách bên trong ô đọc truyện */
+    font-family: Arial, sans-serif;
+    /* Kiểu font chữ */
+    font-size: 16px;
+    /* Cỡ chữ */
+    line-height: 1.5;
+    /* Khoảng cách giữa dòng */
+    overflow-y: auto;
+    /* Tạo thanh cuộn nếu nội dung quá dài */
+}
+
+/* Thiết lập giao diện trang */
+.container {
+    display: flex;
+}
+
+.chapter-list {
+    width: 20%;
+    /* Độ rộng của danh sách các chương */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    /* Đường viền bên phải */
+}
+
+.chapter-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    margin-bottom: 10px;
+}
+
+.story-container {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Thiết lập kiểu dáng danh sách các chương */
+.chapter-list a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.chapter-list a:hover {
+    color: #007bff;
+}
+

@@ -1,0 +1,99 @@
+<section class="Menu mt-5" style="background-color: #e9e9e9; height: 60px;">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" [routerLink]="['']">
+                                    <!-- Ẩn mũi tên mặc định bằng cách sử dụng CSS -->
+                                    <span class="dropdown-toggle-icon"></span>
+                                    <i class="fas fa-home" style="color: #cd1818;"></i>
+                                    Home
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="Menu">
+    <div class="navbar">
+        <h1>Naruto</h1>
+    </div>
+
+    <div class="chapter-selection">
+        <div>
+            <button> Chương Trước</button>
+        </div>
+        <div>
+            <select id="chapterSelect">
+                <option value="chapter1">Chương 1</option>
+                <option value="chapter2">Chương 2</option>
+                <option value="chapter3">Chương 3</option>
+                <!-- Thêm các tùy chọn chương khác -->
+            </select>
+            <input type="number" id="chapterNumber" min="1">
+            <button>Chọn Chương</button>
+        </div>
+        <div class="navigation-buttons">
+            <button>Chương Tiếp Theo</button>
+            <button><a [routerLink]="['/info-truyen']"><i class="fas fa-undo-alt fa-spin"></i>Trang Trước </a></button>
+        </div>
+    </div>
+</section>
+
+
+<section class="NoiDung">
+    <div class="container">
+        <div class="chapter-list">
+            <h3>Danh Sách Các Chương</h3>
+            <ul>
+                <li><a href="#">Chương 1</a></li>
+                <li><a href="#">Chương 2</a></li>
+                <li><a href="#">Chương 3</a></li>
+                <!-- Thêm các chương khác vào đây -->
+            </ul>
+        </div>
+        <div class="story-container">
+            <p>Hôm nay là ngày tàn của mi Tuyền Quang Minh Nhân!!!</p>
+            <p>Hộc hộc!!</p>
+            <p>Chưa xong đâu!!Vũ Trí Ba Tá Trợ!!!</p>
+            <p>Tuyền Quang Minh Nhân!!!</p>
+            <p>Vũ Trí Ba Tá Trợ!!!</p>
+            <p>Tuyền Quang Minh Nhânnnnnnnnnnnnn!!!</p>
+            <p>Vũ Trí Ba Tá Trợooooooooooooooooooooo!!!</p>
+            <p>He he nhóc con tao la lâu hơn mày, chịu thua đi con</p>
+            <p>Từ đâu luffy chạy tới ném cho Tuyền Quang Minh Nhân trái ác quỷ "Huấn Râu Sì", Holly sh*t!! Sức Mạnh quái
+                quỷ gì đây! </p>
+            <p>Tuyền Quang Minh Nhân bỗng nhiên đánh thức được Haki Bá Vương </p>
+            <p>Này anh bạn à!! Để tôi noí cho bạn nghe !! Trên đời này có làm thì mới có ăn đó!! Không làm mà đòi ăn tôi
+                thì tối nay qua phòng 303 nhé hihi!!</p>
+        </div>
+    </div>
+</section>
+<script>
+    // Xử lý sự kiện khi chọn chương
+    document.getElementById('chapterSelect').addEventListener('change', function () {
+        const selectedChapter = this.value;
+        // Điều hướng đến chương đã chọn
+        window.location.href = `#${selectedChapter}`;
+    });
+
+    // Xử lý sự kiện khi nhấn nút "Chọn Chương"
+    document.querySelector('button#chapterSelect').addEventListener('click', function () {
+        const selectedChapter = document.getElementById('chapterNumber').value;
+        // Điều hướng đến chương đã chọn
+        window.location.href = `#chapter${selectedChapter}`;
+    });
+</script>

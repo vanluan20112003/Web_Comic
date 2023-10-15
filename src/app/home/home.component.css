@@ -1,8 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
 .avatar {
-    width: 70px;
+    width: 80px;
     /* Điều chỉnh kích thước ô tròn theo mong muốn */
-    height: 70px;
+    height: 80px;
     /* Điều chỉnh kích thước ô tròn theo mong muốn */
     border-radius: 50%;
     /* Để làm cho ô tròn, sử dụng giá trị 50% cho border-radius */
@@ -16,19 +15,6 @@
     object-fit: cover;
     /* Để hình ảnh avatar bên trong ô tròn tự động thích nghi với kích thước của ô tròn */
 }
-
-a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s;
-    /* Thêm hiệu ứng màu chữ mượt mà */
-}
-
-a:hover {
-    color: green;
-    /* Đổi màu chữ khi di chuột qua */
-}
-
 
 
 .logotext {
@@ -260,52 +246,4 @@ a:hover {
 .search-container i:hover {
     color: #ff0000;
     /* Màu khi hover */
-}
-
-.nun-nhay {
-    font-size: 24px;
-    animation: nhun-nhay 1s infinite;
-
-}
-
-@keyframes nhun-nhay {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-10px);
-    }
-
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
-.ten-trang-web {
-    font-family: 'Arial', sans-serif;
-    /* Chọn font chữ */
-    font-size: 36px;
-    /* Kích thước chữ */
-    color: #3498db;
-    /* Màu sắc chữ */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* Hiệu ứng bóng đổ */
-    letter-spacing: 2px;
-    /* Khoảng cách giữa các ký tự */
-    text-transform: uppercase;
-    /* Chuyển đổi thành chữ hoa */
-}
-
-/* Hiệu ứng hover */
-.ten-trang-web:hover {
-    color: #e74c3c;
-    /* Màu sắc khi hover */
-    transform: scale(1.1);
-    /* Hiệu ứng phóng to */
 }
