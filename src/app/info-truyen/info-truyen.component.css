@@ -256,40 +256,99 @@
     border-radius: 10px;
     /* Bo tròn góc cho hình ảnh bìa */
 }
+
 /* Tùy chỉnh danh sách chương */
 .list-group {
-    background-color: #f7f7f7; /* Màu nền */
-    border: 2px solid #ccc; /* Đường viền */
-    border-radius: 10px; /* Bo tròn góc */
-    padding: 10px; /* Khoảng cách bên trong */
+    background-color: #f7f7f7;
+    /* Màu nền */
+    border: 2px solid #ccc;
+    /* Đường viền */
+    border-radius: 10px;
+    /* Bo tròn góc */
+    padding: 10px;
+    /* Khoảng cách bên trong */
 }
 
 .list-group-item {
-    background-color: #fff; /* Màu nền của mỗi mục danh sách */
-    border: none; /* Loại bỏ đường viền của từng mục */
-    border-radius: 5px; /* Bo tròn góc của từng mục */
-    margin-bottom: 5px; /* Khoảng cách giữa các mục */
-    padding: 5px 10px; /* Khoảng cách bên trong của mỗi mục */
+    background-color: #fff;
+    /* Màu nền của mỗi mục danh sách */
+    border: none;
+    /* Loại bỏ đường viền của từng mục */
+    border-radius: 5px;
+    /* Bo tròn góc của từng mục */
+    margin-bottom: 5px;
+    /* Khoảng cách giữa các mục */
+    padding: 5px 10px;
+    /* Khoảng cách bên trong của mỗi mục */
 }
 
 .list-group-item:hover {
-    background-color: #f2f2f2; /* Màu nền khi di chuột vào mục danh sách */
+    background-color: #f2f2f2;
+    /* Màu nền khi di chuột vào mục danh sách */
 }
 
 /* Tùy chỉnh khung chứa danh sách */
 .col-md-3 {
-    padding: 15px; /* Khoảng cách bên trong khung chứa danh sách */
-    background-color: #e9e9e9; /* Màu nền của khung chứa danh sách */
-    border: 1px solid #ccc; /* Đường viền của khung chứa danh sách */
-    border-radius: 10px; /* Bo tròn góc của khung chứa danh sách */
+    padding: 15px;
+    /* Khoảng cách bên trong khung chứa danh sách */
+    background-color: #e9e9e9;
+    /* Màu nền của khung chứa danh sách */
+    border: 1px solid #ccc;
+    /* Đường viền của khung chứa danh sách */
+    border-radius: 10px;
+    /* Bo tròn góc của khung chứa danh sách */
 }
 
 .col-md-3 h3 {
-    font-size: 1.5rem; /* Kích thước phông chữ cho tiêu đề "Danh sách các chương" */
-    color: #333; /* Màu chữ cho tiêu đề */
+    font-size: 1.5rem;
+    /* Kích thước phông chữ cho tiêu đề "Danh sách các chương" */
+    color: #333;
+    /* Màu chữ cho tiêu đề */
 }
 
 /* Đổi màu chữ khi di chuột vào tiêu đề "Danh sách các chương" */
 .col-md-3 h3:hover {
     color: #555;
 }
+
+/* Đoạn CSS này sẽ làm cho trang trông đẹp hơn */
+.container1 {
+    max-width: 900px;
+    /* Giới hạn chiều rộng của nội dung */
+    margin: 0 auto;
+    /* Căn giữa nội dung */
+}
+
+/* Đoạn CSS để thiết kế hộp chat */
+#chat-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+#chat-input {
+    width: 70%;
+    /* Rộng hộp nhập */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+

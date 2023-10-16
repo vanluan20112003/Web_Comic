@@ -1,3 +1,43 @@
+<section class="header pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 d-flex">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="avatar">
+                            <a [routerLink]="['']">
+                                <img src="./assets/image/Manga.jpeg" alt="Avatar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center">
+                            <a [routerLink]="['']">
+                                <div class="ten-trang-web nun-nhay">Phê Truyện</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sign col-md-5 d-flex flex-column align-items-center">
+                <div class="row">
+                    <div class="sign col">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a [routerLink]="['DangNhap']">Login</a>
+                        </button>
+                    </div>
+
+                    <div class="sign col">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a [routerLink]="['DangKi']">Sign up</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--Menu-->
 <section class="Menu mt-5" style="background-color: #e9e9e9; height: 60px;">
     <div class="container">
@@ -32,14 +72,15 @@
 <section class="Info-Truyen">
     <div class="container mx-auto mt-5">
         <div class="row">
-            <div class="col-md-5 mb-0">
-                <img src="./assets/image/naruto.jpeg" alt="Bìa truyện" class="book-cover">
+            <div class="col-md-4 mb-0">
+                <img src="./assets/image/naruto.jpeg" style="height:500px;width: 400px;" alt="Bìa truyện"
+                    class="book-cover">
             </div>
             <div class="col-md-4 mb-0">
-                <h2>Tên Truyện</h2>
+                <h2 class="hienanaminate">Naruto</h2>
                 <p>Tác giả: Tên Tác Giả</p>
                 <p>Số Chương: 3</p>
-                <p>Nội dung truyện:</p>
+
                 <div class=" small text-warning mb-2">
                     <span class="star" style="color: black;">&#9733;</span>
                     <span class="star">&#9733;</span>
@@ -57,7 +98,8 @@
                             500</p>
                     </div>
                 </div>
-                <div style="color: grey;">
+                <p>Nội dung truyện:</p>
+                <div style="color: grey;background-color:antiquewhite;">
                     <p style="color: black;">Câu chuyện về một cậu bé được các nhà hiền giả dạy triết học và hành trình
                         đi thông đí*!! à lộn đi thông não của cậu ta!!</p>
                 </div>
@@ -70,16 +112,25 @@
             <div class="col-md-3 mt-4">
                 <h3 class="title-with-effect">Danh sách các chương</h3>
                 <ul class="list-group">
-                    <li class="list-group-item">Chương 1: Naruto Thức Tỉnh Haki Bá Vương</li>
-                    <li class="list-group-item">Chương 2: Naruto Hóa Siêu SaiYa</li>
+                    <li class="list-group-item"><a [routerLink]="['/DocTruyen']">Chương 1: Naruto Thức Tỉnh Haki Bá
+                            Vương</a></li>
+                    <li class=" list-group-item">Chương 2: Naruto Hóa Siêu SaiYa</li>
                     <li class="list-group-item">Chương 3: Naruto Thức Tỉnh Ấn Diệt Quỷ</li>
                     <!-- Thêm các mục danh sách chương khác ở đây -->
                 </ul>
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center ">
-            <button class="custom-button bg-danger"><a [routerLink]="['/DocTruyen']">Đọc Truyện<i
-                        class="fas fa-book-open fa-spin" style="color: #00fa2a;"></i></a> </button>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="custom-button bg-info"><a [routerLink]="['/DocTruyen']">Đọc Truyện<i
+                                class="fas fa-book-open fa-spin" style="color: #00fa2a;"></i></a> </button>
+                </div>
+                <div class="col-md-6">
+                    <button class="custom-button bg-info"><a [routerLink]="['/DocTruyen']"> Yêu Thích</a> </button>
+                </div>
+            </div>
         </div>
     </div>
+
 </section>

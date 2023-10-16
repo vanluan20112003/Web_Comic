@@ -1,3 +1,28 @@
+<section class="header pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 d-flex">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="avatar">
+                            <a [routerLink]="['']">
+                                <img src="./assets/image/Manga.jpeg" alt="Avatar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center">
+                            <a [routerLink]="['']">
+                                <div class="ten-trang-web nun-nhay">Phê Truyện</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 <div class="login-container">
     <h1>Đăng Nhập</h1>
     <form>
@@ -17,7 +42,7 @@
     </form>
     <div class="row mt-4">
         <div class="col-md-6">
-            <p><a [routerLink]="['/']">Back</a></p>
+            <p><a [routerLink]="['']"><i class="fas fa-undo"></i>Back</a></p>
         </div>
 
         <div class="col-md-6">
@@ -25,5 +50,6 @@
         </div>
 
     </div>
+    <p><a [routerLink]="['/DangKi']">Chưa có tài khoản? Đăng Kí</a></p>
 
 </div>

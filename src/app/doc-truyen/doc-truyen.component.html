@@ -1,3 +1,43 @@
+<section class="header pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 d-flex">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="avatar">
+                            <a [routerLink]="['']">
+                                <img src="./assets/image/Manga.jpeg" alt="Avatar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center">
+                            <a [routerLink]="['']">
+                                <div class="ten-trang-web nun-nhay">Phê Truyện</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sign col-md-5 d-flex flex-column align-items-center">
+                <div class="row">
+                    <div class="sign col">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a [routerLink]="['DangNhap']">Login</a>
+                        </button>
+                    </div>
+
+                    <div class="sign col">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a [routerLink]="['DangKi']">Sign up</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="Menu mt-5" style="background-color: #e9e9e9; height: 60px;">
     <div class="container">
         <div class="row">
@@ -29,14 +69,18 @@
 
 <section class="Menu">
     <div class="navbar">
-        <h1>Naruto</h1>
+        <h1 class="hienanaminate">Naruto</h1>
     </div>
 
     <div class="chapter-selection">
         <div>
-            <button> Chương Trước</button>
+            <a [routerLink]="['']"><button><i class="fas fa-long-arrow-alt-left" style="color: #43c913;"></i>Trở
+                    lại</button></a>
         </div>
+        
         <div>
+
+            <button><i class="fas fa-chevron-left" style="color: #0822e7;"></i>Chương trước</button>
             <select id="chapterSelect">
                 <option value="chapter1">Chương 1</option>
                 <option value="chapter2">Chương 2</option>
@@ -44,11 +88,23 @@
                 <!-- Thêm các tùy chọn chương khác -->
             </select>
             <input type="number" id="chapterNumber" min="1">
-            <button>Chọn Chương</button>
+            <button>Chương sau<i class="fas fa-angle-right" style="color: #0030f0;"></i></button>
+        </div>
+        <button (click)="toggleDropdown()"><i class="fas fa-wrench fa-lg"></i></button>
+        <div id="dropdown">
+            <form>
+                <label for="colorSelect">Chọn Màu Nền:</label>
+                <select id="colorSelect" (change)="changeBackgroundColor()">
+                  <option value="white">Trắng</option>
+                  <option value="blue">Xanh</option>
+                  <option value="gray">Xám</option>
+                  <option value="green">Xanh Lá Cây</option>
+                  <option value="yellow">Vàng</option>
+                </select>
+              </form>
         </div>
         <div class="navigation-buttons">
-            <button>Chương Tiếp Theo</button>
-            <button><a [routerLink]="['/info-truyen']"><i class="fas fa-undo-alt fa-spin"></i>Trang Trước </a></button>
+
         </div>
     </div>
 </section>
@@ -80,8 +136,23 @@
             <p>Này anh bạn à!! Để tôi noí cho bạn nghe !! Trên đời này có làm thì mới có ăn đó!! Không làm mà đòi ăn tôi
                 thì tối nay qua phòng 303 nhé hihi!!</p>
         </div>
+        <div class="container1">
+            <div id="chat-container" class=" ">
+                <input type="text" id="chat-input" placeholder="Nhập bình luận của bạn...">
+                <button id="send-button">Gửi</button>
+            </div>
+            <div id="chat-box" class="border p-3" style="height: 300px; overflow-y: auto;">
+                <p>@KhaiHuynh_6muimo: Luân Đẹp Trai vãi <i class="fas fa-grin-hearts"></i></p>
+                <p>@KhoiNguyen_hacker: @KhaiHuynh_6muimo Chuẩn luôn rồi bạn ơi</p>
+                <p>@TenKhanh_HoLaHo: Naruto mạnh quá!! mạnh mồm</p>
+                <p>@Hieu_Reyna: Vô Game đi</p>
+            </div>
+        </div>
     </div>
+
 </section>
+
+
 <script>
     // Xử lý sự kiện khi chọn chương
     document.getElementById('chapterSelect').addEventListener('change', function () {

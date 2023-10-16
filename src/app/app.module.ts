@@ -13,11 +13,13 @@ import { ChinhSachComponent } from './chinh-sach/chinh-sach.component';
 import { DangNhapComponent } from './dang-nhap/dang-nhap.component';
 import { DocTruyenComponent } from './doc-truyen/doc-truyen.component';
 import { DangKiComponent } from './dang-ki/dang-ki.component';
+import { ThongTinUserComponent } from './thong-tin-user/thong-tin-user.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
     InfoTruyenComponent,
     HomeComponent,
     DanhmucComponent,
@@ -26,6 +28,7 @@ import { DangKiComponent } from './dang-ki/dang-ki.component';
     DangNhapComponent,
     DocTruyenComponent,
     DangKiComponent,
+    ThongTinUserComponent,
 
   ],
   imports: [

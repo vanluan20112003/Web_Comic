@@ -1,11 +1,11 @@
-<section class="header pt-3">
+<section class="header pt-3 " id="top">
     <div class="container">
         <div class="row">
             <div class="col-md-7 d-flex">
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <div class="avatar">
-                            <a [routerLink]="['']">
+                            <a [routerLink]="['/ThongTinUser']">
                                 <img src="./assets/image/Manga.jpeg" alt="Avatar">
                             </a>
                         </div>
@@ -20,7 +20,20 @@
                 </div>
             </div>
             <div class="sign col-md-5 d-flex flex-column align-items-center">
+                <div class="row">
+                    <div class="sign col">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a [routerLink]="['DangNhap']">Login</a>
+                        </button>
+                    </div>
 
+                    <div class="sign col">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a [routerLink]="['DangKi']">Sign up</a>
+                        </button>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -47,49 +60,27 @@
                             </li>
 
                         </ul>
+
+
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </section>
-
-
-<form action="" method="POST" class="mt-3">
-    <h2 style="color: blue;">Đăng Kí</h2>
-    <label for="hoTen">Họ Tên:</label>
-    <input type="text" id="hoTen" name="hoTen" required>
-
-    <label for="DiaChi">Địa chỉ</label>
-    <input type="text" id="DiaChi" name="DiaChi" required>
-
-
-    <label for="namSinh">Năm Sinh:</label>
-    <input type="date" id="namSinh" name="namSinh" required>
-
-    <label for="gmail">Gmail:</label>
-    <input type="email" id="gmail" name="gmail" required>
-
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <label for="confirmPassword">Confirm Password:</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-    <div class="row" style:align-items-center>
-        <div class="col-md-2"><input type="radio" id="agreeTerms" name="agreeTerms" required></div>
-        <div class="col-md-10"><label for="agreeTerms"><a [routerLink]="['/ChinhSach']">Tôi đã đọc và đồng ý với điều
-                    khoản sử dụng<i class="fas fa-users"></i></a></label>
-        </div>
+<div class="user-profile mt-4">
+    <div class="avatar"></div>
+    <div class="user-name">Thông tin người dùng</div>
+    <div class="user-details">
+        <p><strong>Họ và tên:</strong> Hồ Trần Gia Khánh</p>
+        <p><strong>Ngày sinh:</strong> 08/10/2003</p>
+        <p><strong>Email:</strong> Khanh@gmail.com</p>
+        <p><strong>Địa chỉ</strong> TP.Hồ Chí Minh</p>
+        <p><strong>Tên User:</strong> TenKhanh_HoLaHo</p>
+        <p><strong>Ngày Đăng Kí:</strong> 08/10/2023</p>
     </div>
-
-
-
-
-
-    <button type="submit">Đăng Ký</button>
-    <a [routerLink]="['/DangNhap']">Đã có tài khoản? Đăng nhập</a>
-</form>
+    <div class="button-container">
+        <button class="button change-password-button">Đổi mật khẩu</button>
+        <button class="button update-info-button">Cập nhật thông tin</button>
+    </div>
+</div>

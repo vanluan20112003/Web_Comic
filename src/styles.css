@@ -29,6 +29,27 @@ a:hover {
     /* Đổi màu chữ khi di chuột qua */
 }
 
+/* CSS để thiết kế nút "scroll-to-top" */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.scroll-to-top i {
+    font-size: 20px;
+}
+
+
 
 
 .logotext {
@@ -308,4 +329,28 @@ a:hover {
     /* Màu sắc khi hover */
     transform: scale(1.1);
     /* Hiệu ứng phóng to */
+}
+
+#scrollToTopButton {
+    border-radius: 50%;
+    margin-left: 1500px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hienanaminate {
+    animation: blink 3s infinite;
+    color: chocolate;
 }
