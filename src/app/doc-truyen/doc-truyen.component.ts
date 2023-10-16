@@ -22,5 +22,9 @@ export class DocTruyenComponent {
       dropdown.style.display = "none";
     }
   }
-  
+  comment:String[] = []
+  abc():void{
+    let a = (document.getElementById('chat-input') as HTMLInputElement).value
+    this.comment.push(a)
+  }
 }

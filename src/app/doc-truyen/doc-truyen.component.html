@@ -139,13 +139,14 @@
         <div class="container1">
             <div id="chat-container" class=" ">
                 <input type="text" id="chat-input" placeholder="Nhập bình luận của bạn...">
-                <button id="send-button">Gửi</button>
+                <button id="send-button" (click)="abc()">Gửi</button>
             </div>
             <div id="chat-box" class="border p-3" style="height: 300px; overflow-y: auto;">
                 <p>@KhaiHuynh_6muimo: Luân Đẹp Trai vãi <i class="fas fa-grin-hearts"></i></p>
                 <p>@KhoiNguyen_hacker: @KhaiHuynh_6muimo Chuẩn luôn rồi bạn ơi</p>
                 <p>@TenKhanh_HoLaHo: Naruto mạnh quá!! mạnh mồm</p>
                 <p>@Hieu_Reyna: Vô Game đi</p>
+                <p *ngFor="let i of comment">{{i}}</p>
             </div>
         </div>
     </div>
